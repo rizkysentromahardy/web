@@ -28,8 +28,7 @@ if ($koneksi) {
         $upload_dir = './images/' . $img_name;
 
         // data to db
-        $kode       = rand(10, 1234567890);
-
+        $kode       = date('ymdHis');
         // kueri insert lapor
         $sql = "INSERT INTO lapor (nama_lapor,alamat_lapor,detail_lapor,foto_lapor,jenis_lapor,nomer_tlp,tiket_lapor,tanggal_lapor ) VALUES
          ('{$nama}', '{$alamat}', '{$catatan}', '{$img_name}', '{$jenis}', '{$telp}', '{$kode}', NOW())";
@@ -39,6 +38,7 @@ if ($koneksi) {
 
         // cek apakah hasil eksekusi berhasil
         if (move_uploaded_file($tmp_file, $upload_dir) && $result) {
+
             // kueri cek data
             $sql2 = "SELECT * FROM lapor WHERE tiket_lapor='{$kode}'";
 

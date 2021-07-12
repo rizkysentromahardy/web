@@ -23,7 +23,7 @@ if (isset($_POST['username']) && isset($_POST['passwd'])) {
         echo json_encode($response, JSON_PRETTY_PRINT);
     } else {
         http_response_code(404);
-        echo json_encode(array("message" => "not found data!"));
+        echo json_encode(array("message" => "data tidak ada!"));
     }
 } else {
     http_response_code(404);

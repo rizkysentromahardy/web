@@ -1,10 +1,35 @@
 <?php
 
+session_start();
+
+if (!isset($_SESSION["login"])) {
+    header("Location:index.php");
+    exit;
+}
+
 include('header/header.php');
 include('config/conn.php');
 
-$sql = "SELECT * FROM lapor";
+$sql = "SELECT * FROM lapor ORDER BY tanggal_lapor ";
 $result = mysqli_query($koneksi, $sql);
+// $sql2 = "SELECT * FROM logs WHERE nama_sts LIKE 'selesai'";
+// $result2 = mysqli_query($koneksi, $sql2);
+// $sql = "SELECT 
+// m.id_lapor, 
+// m.nama_lapor,
+//         m.tiket_lapor,
+//         m.detail_lapor,
+//         m.jenis_lapor,
+//         m.alamat_lapor,
+//         m.tanggal_lapor,
+//         c.nama_sts
+        
+// FROM
+// lapor m
+// INNER JOIN logs c ON c.id_lapor = m.id_lapor
+// WHERE c.nama_sts = 'selesai' ";
+
+// $result = mysqli_query($koneksi,$sql);
 
 
 ?>
@@ -21,35 +46,39 @@ $result = mysqli_query($koneksi, $sql);
             <h6 class="m-0 font-weight-bold text-primary">Data Pelapor</h6>
         </div>
         <div class="card-body">
-            <input id="datepicker" width="276" />
             <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0" data-order='[[ 0, "desc" ]]'>
+
                     <thead>
                         <tr>
+                        <a href="config/export.php">export excel</a>
                             <th style="text-align:center;">TANGGAL</th>
                             <th>NAMA</th>
                             <th>ALAMAT</th>
                             <th>JENIS</th>
+                            <th>TIKET</th>
                             <th style="text-align:center;">AKSI</th>
+                            <!-- <th>STATUS</th> -->
                         </tr>
                     </thead>
                     <tbody>
                         <?php while ($row = mysqli_fetch_array($result)) : ?>
                             <tr style="position: center;">
+
                                 <td style="text-align:center;"><?= $row['tanggal_lapor'] ?></td>
                                 <td><?= $row['nama_lapor'] ?></td>
                                 <td><?= $row['alamat_lapor'] ?></td>
                                 <td><?= $row['jenis_lapor'] ?></td>
+                                <td><?= $row['tiket_lapor'] ?></td>
                                 <td style="text-align:center;">
                                     <!-- Button trigger modal -->
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                                       <a href=<?= "form.php?id=".$row['id_lapor'] ?> >Lihat</a>
-                                        
-                                    </button>
+
+                                    <a href=<?= "form.php?id=" . $row['id_lapor'] ?> class="btn btn-primary">Lihat</a>
+                                <!-- <td><?= $row['nama_sts'] ?></td> -->
                                 </td>
                             </tr>
                         <?php endwhile; ?>
-                        
+
                     </tbody>
                 </table>
             </div>
