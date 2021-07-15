@@ -23,7 +23,7 @@ $result = mysqli_query($koneksi, $sql);
 //         m.alamat_lapor,
 //         m.tanggal_lapor,
 //         c.nama_sts
-        
+
 // FROM
 // lapor m
 // INNER JOIN logs c ON c.id_lapor = m.id_lapor
@@ -44,6 +44,14 @@ $result = mysqli_query($koneksi, $sql);
     <div class="card shadow mb-4">
         <div class="card-header py-3">
             <h6 class="m-0 font-weight-bold text-primary">Data Pelapor</h6>
+            &nbsp;
+            <div class="row m-0">
+                <a href="config/export.php"><img src="img/excel.png" style="height: 30px;"></img></a>
+                &ensp;
+                <p>
+                    Download Data Excel
+                </p>
+            </div>
         </div>
         <div class="card-body">
             <div class="table-responsive">
@@ -51,7 +59,7 @@ $result = mysqli_query($koneksi, $sql);
 
                     <thead>
                         <tr>
-                        <a href="config/export.php">export excel</a>
+
                             <th style="text-align:center;">TANGGAL</th>
                             <th>NAMA</th>
                             <th>ALAMAT</th>
@@ -74,7 +82,7 @@ $result = mysqli_query($koneksi, $sql);
                                     <!-- Button trigger modal -->
 
                                     <a href=<?= "form.php?id=" . $row['id_lapor'] ?> class="btn btn-primary">Lihat</a>
-                                <!-- <td><?= $row['nama_sts'] ?></td> -->
+                                    <!-- <td><?= $row['nama_sts'] ?></td> -->
                                 </td>
                             </tr>
                         <?php endwhile; ?>

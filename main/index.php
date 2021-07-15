@@ -52,7 +52,7 @@
                             <h1 class="display-1 lh-1 mb-3">Pengaduan KK dan KTP</h1>
                             <p class="lead fw-normal text-muted mb-5">Pengaduan anda dapat dilakukan dimana saja dengan menggunakan smartphone tanpa harus datang ke kecamatan</p>
                             <div class="d-flex flex-column flex-lg-row align-items-center">
-                                <a class="me-lg-5 mb-4 mb-lg-0" href="https://sfile.mobi/6a26mOlpYst"><img class="app-badge" src="img/download.png" alt="..." /><p>Download Disini</p></a>
+                                <a class="me-lg-5 mb-4 mb-lg-0" href="https://sfile.mobi/6a26mOlpYst"><img class="app-badge" src="img/android2.png" style="height:  80px;" alt="..." /><p></p></a>
                                 
                                 <!-- <a href="#!"><img class="app-badge" src="img/app-store-badge.svg" alt="..." /></a> -->
                             </div>
@@ -113,15 +113,15 @@
                                     <div class="text-center">
                                         <i class="bi-phone icon-feature text-gradient d-block mb-3"></i>
                                         <h3 class="font-alt">Design Ringan</h3>
-                                        <p class="text-muted mb-0">Design sangat nyaman dan mudah digunakan </p>
+                                        <p class="text-muted mb-0">design sangat nyaman dan mudah digunakan </p>
                                     </div>
                                 </div>
                                 <div class="col-md-6 mb-5">
                                     <!-- Feature item-->
                                     <div class="text-center">
-                                        <i class="bi-camera icon-feature text-gradient d-block mb-3"></i>
-                                        <h3 class="font-alt">Mudah dan Fleksibel</h3>
-                                        <p class="text-muted mb-0">Fleksibel dalam upload foto dan laporan</p>
+                                        <i class="bi-clock-history icon-feature text-gradient d-block mb-3"></i>
+                                        <h3 class="font-alt">Lapor Setiap Saat</h3>
+                                        <p class="text-muted mb-0">kirim laporan dapat dilakukan dimana saja</p>
                                     </div>
                                 </div>
                             </div>
@@ -129,17 +129,17 @@
                                 <div class="col-md-6 mb-5 mb-md-0">
                                     <!-- Feature item-->
                                     <div class="text-center">
-                                        <i class="bi-gift icon-feature text-gradient d-block mb-3"></i>
-                                        <h3 class="font-alt">Tidak Dipungut biaya</h3>
-                                        <p class="text-muted mb-0">Tidak ada pemungutuan biaya saat lapor</p>
+                                        <i class="bi-cash-coin icon-feature text-gradient d-block mb-3"></i>
+                                        <h3 class="font-alt">Tidak Dipungut Biaya</h3>
+                                        <p class="text-muted mb-0">tidak ada pemungutuan biaya saat lapor</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <!-- Feature item-->
                                     <div class="text-center">
-                                        <i class="bi-patch-check icon-feature text-gradient d-block mb-3"></i>
-                                        <h3 class="font-alt">Terverifikasi</h3>
-                                        <p class="text-muted mb-0">Laporan di verifikasi secara online oleh pihak kecamatan</p>
+                                        <i class="bi-clipboard-check icon-feature text-gradient d-block mb-3"></i>
+                                        <h3 class="font-alt">Status Lapor</h3>
+                                        <p class="text-muted mb-0">status laporan dapat dilihat secara real-time setelah lapor</p>
                                     </div>
                                 </div>
                             </div>
@@ -182,7 +182,7 @@
                 <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
                     <div class="col-12 col-lg-5">
                         <h2 class="display-4 lh-1 mb-4">Tata Cara Penggunaan</h2>
-                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">1. Buka Aplikasi <br> 2. Masukan Data Laporan  <br> 3. Lihat Status Laporan Anda <br> 4. Selesai</p>
+                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">1. Buka Aplikasi <br> 2. Masukan Data Laporan  <br> 3. Kirim laporan Anda <br> 4. Lihat Status Laporan Anda <br> 4. Selesai</p>
                     </div>
                     <div class="col-sm-8 col-md-6">
                         <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle" src="https://source.unsplash.com/u8Jn2rzYIps/900x900" alt="..." /></div>
@@ -208,7 +208,7 @@
             <div class="container px-5">
                 <h2 class="text-center text-white font-alt mb-4">Dapatkan Aplikasi Disini</h2>
                 <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
-                    <a class="me-lg-3 mb-4 mb-lg-0" href="https://sfile.mobi/6a26mOlpYst"><img class="app-badge" src="img/download.png" alt="..." /></a>
+                    <a class="me-lg-3 mb-4 mb-lg-0" href="https://sfile.mobi/6a26mOlpYst"><img class="app-badge" src="img/android2.png" style="height: 80px;" alt="..." /></a>
                     <!-- <a href="#!"><img class="app-badge" src="img/app-store-badge.svg" alt="..." /></a> -->
                 </div>
             </div>

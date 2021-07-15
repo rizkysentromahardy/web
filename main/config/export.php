@@ -5,8 +5,8 @@ include('conn.php');
 $filename="data pelapor-".date('Ymd').".xls";
 
 //header info for browser
+header("Content-Disposition: attachment; filename=\"$filename\"");
 header("Content-Type: application/vnd-ms-excel"); 
-   header('Content-Disposition: attachment; filename="' . $filename . '";');
 
    //menampilkan data sebagai array dari tabel produk
    $out=array();
