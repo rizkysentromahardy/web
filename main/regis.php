@@ -1,5 +1,11 @@
 <?php
+session_start();
 include('config/conn.php');
+
+if (!isset($_SESSION["login"])) {
+    header("Location:404.php");
+    exit;
+}
 
 if (isset($_POST['regis'])){
 

@@ -15,6 +15,8 @@ if ($count > 0) {
 		$_SESSION["password"]=$row["password"];
     $_SESSION["login"]=true;
     header("location:home.php");
+    echo "sukses";
 } else {
-    header("location:index.php");
+    echo "<script>alert('username dan password tidak sesuai');</script>";
+    header("location:login.php");
 }

@@ -51,7 +51,7 @@ if ($koneksi) {
                     $tiketLapor = $row['tiket_lapor'];
 
                     // kueri insert
-                    $insertLog = "INSERT INTO logs (id_lapor, date, nama_sts) VALUES ('{$id}', NOW(), 'pending')";
+                    $insertLog = "INSERT INTO logs (id_lapor, date, nama_sts) VALUES ('{$id}', '{$kode}', 'pending')";
                     $logs = $koneksi->query($insertLog);
                     if ($logs) {
                         // echo 'Berhasil insert log';

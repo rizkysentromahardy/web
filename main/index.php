@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>New Age - Start Bootstrap Theme</title>
+        <title>Kecamatan Sumobito</title>
         <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
@@ -50,7 +50,7 @@
                             <h1 class="display-1 lh-1 mb-3">Pengaduan KK dan KTP</h1>
                             <p class="lead fw-normal text-muted mb-5">Pengaduan anda dapat dilakukan dimana saja dengan menggunakan smartphone tanpa harus datang ke kecamatan</p>
                             <div class="d-flex flex-column flex-lg-row align-items-center">
-                                <a class="me-lg-5 mb-4 mb-lg-0" href="#!"><img class="app-badge" src="img/download.png" alt="..." /><p>Download Disini</p></a>
+                                <a class="me-lg-5 mb-4 mb-lg-0" href="https://sfile.mobi/6a26mOlpYst"><img class="app-badge" src="img/download.png" alt="..." /><p>Download Disini</p></a>
                                 
                                 <!-- <a href="#!"><img class="app-badge" src="img/app-store-badge.svg" alt="..." /></a> -->
                             </div>
@@ -206,7 +206,7 @@
             <div class="container px-5">
                 <h2 class="text-center text-white font-alt mb-4">Dapatkan Aplikasi Disini</h2>
                 <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
-                    <a class="me-lg-3 mb-4 mb-lg-0" href="#!"><img class="app-badge" src="img/download.png" alt="..." /></a>
+                    <a class="me-lg-3 mb-4 mb-lg-0" href="https://sfile.mobi/6a26mOlpYst"><img class="app-badge" src="img/download.png" alt="..." /></a>
                     <!-- <a href="#!"><img class="app-badge" src="img/app-store-badge.svg" alt="..." /></a> -->
                 </div>
             </div>
