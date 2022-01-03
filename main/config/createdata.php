@@ -24,7 +24,7 @@ if ($koneksi) {
 
         // data gambar
         $tmp_file   = $_FILES['gambar']['tmp_name'];
-        $img_name   = $_FILES["gambar"]['name'];
+        $img_name   = $_FILES['gambar']['name'];
         $upload_dir = './images/' . $img_name;
 
         // data to db

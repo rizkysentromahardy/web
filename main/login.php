@@ -59,13 +59,21 @@ include('config/conn.php');
             <div class="col-xl-5 col-lg-5 col-md-9">
 
                 <div class="card o-hidden border-0  shadow-lg my-5">
-                    <div class="card-body p-0">
-                        <!-- Nested Row within Card Body -->
                         <?php
-                        if (isset($error)) :
-                                ?>
-                           <p> userneme tidak ada</p>
-                           <?php endif;?>     
+                        if(isset($_GET['pesan'])){
+                            if($_GET['pesan'] == "gagal"){
+                                echo "<div class='alert alert-warning' role='alert' style='text-align:center' >
+                                Login gagal! username dan password salah!
+                              </div>";
+                            }else if($_GET['pesan'] == "logout"){
+                                echo "Anda telah berhasil logout";
+                            }else if($_GET['pesan'] == "belum_login"){
+                                echo "Anda harus login untuk mengakses halaman admin";
+                            }
+                        }
+
+                        ?>     
+                    <div class="card-body p-0">
                         <div class="row">
                             <div class="col-lg-5 d-none"></div>
                             <img src=""></img>
