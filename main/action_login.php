@@ -15,7 +15,6 @@ if ($count > 0) {
 		$_SESSION["password"]=$row["password"];
     $_SESSION["login"]=true;
     header("location:home.php");
-} else {
-    header("location:login.php?pesan=gagal");
-    
+}else {
+  header("location:login.php?pesan=gagal");
 }
